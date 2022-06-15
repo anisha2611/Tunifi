@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)file:///C:/Users/lenovo/Downloads/Login.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">  
+
+<title> Login Page </title>  
+<style>   
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color:   rgba(250, 201, 144, 0.959);  
+}  
+button {   
+        color: white;
+    background:   rgb(8, 8, 8);
+    padding: 6px 10px;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 6px;
+    cursor: pointer;
+
+         }   
+ form {   
+        border: 3px solid #f1f1f1;   
+    }   
+ input[type=text], input[type=password] {   
+        width: 35%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid rgb(12, 12, 12);   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+        
+     
+ .container {   
+        padding: 25px;   
+        background-color:  rgb(252, 227, 182);  
+    }   
+</style>   
+</head>    
+<body>    
+    <center> <h1> Login </h1> </center>   
+     
+        <div class="container">   
+            Username :<br>
+            <input type="text" name="text" id="username">  
+            <br><br>
+
+            Password :<br> 
+            <input type="password" name="password" id="password">  
+            <button onclick="login()">Submit</button>
+           
+        </div>   
+      
+<script type="text/javascript">
+    function login()
+    {
+        var uname=document.getElementById('username').value
+        var pass = document.getElementById('password').value
+        if (uname=="anisha" && pass=="shubham")
+        {
+            location.assign("file:///C:/Users/royan/Documents/CodePlayGround/SpotifyC/index.html")
+        
+        }
+        else{
+            window.alert("Login Failed!")
+        }
+    }
+</script> 
+     
+</body></html>
